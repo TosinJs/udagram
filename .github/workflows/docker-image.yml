@@ -37,7 +37,7 @@ jobs:
       run: docker push rilhomie/udagram-frontend:v1
       
     - name: Build the Proxy Server Docker Image
-      run: docker build -t udagram-proxyserver./proxyserver --tag rilhomie/udagram-proxyserver:v1
+      run: docker build -t udagram-proxyserver ./proxyserver --tag rilhomie/udagram-proxyserver:v1
     - name: Docker Push
       run: docker push rilhomie/udagram-proxyserver:v1
       
